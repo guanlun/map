@@ -5,8 +5,9 @@ const styles = StyleSheet.create({
     container: {
         margin: 10,
         padding: 10,
+        height: 120,
+        width: 200,
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
-        flex: 1,
     },
 });
 
@@ -19,7 +20,7 @@ export default class LocationCard extends React.Component {
 
     render() {
         return (
-            <TouchableOpacity style={styles.container} onPress={() => this.props.onLocationSelected(this.props.index)}>
+            <TouchableOpacity style={styles.container}>
                 <Text>{this.props.name}</Text>
             </TouchableOpacity>
         );
